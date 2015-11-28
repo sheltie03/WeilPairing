@@ -47,6 +47,28 @@ export PATH
  (実行後，PDFを表示するのチェックを外す．理由は，日本語が反映されないためです．どなたかわかる方は教えて下さい．)
  + これで完了です．
  
- ## 連絡
+## mktexlsrがない!!
+ 環境によっては、mktexlsrというコマンド名でなく、texhashという名前になっていることがあります[[引用]](www.biwako.shiga-u.ac.jp/sensei/kumazawa/aboutsty.html)．
+ 
+### slashboxを追加したい場合
+
+`/usr/local/texlive/texmf-local/tex/latex/`に適当にディレクトリ`sty/`を作って[`slashbox.sty`](ftp://ftp.kddilabs.jp/CTAN/macros/latex/contrib/slashbox/slashbox.sty)を保存する．そして，
+ 
+ ```
+ $ sudo texhash /usr/local/texlive/texmf-local/tex/latex/sty/
+texhash: Updating /usr/local/texlive/texmf-local/tex/latex/sty//ls-R... 
+texhash: Done.
+$ sudo texhash
+texhash: Updating /usr/local/texlive/2015/texmf-config/ls-R... 
+texhash: Updating /usr/local/texlive/2015/texmf-dist/ls-R... 
+texhash: Updating /usr/local/texlive/2015/texmf-var/ls-R... 
+texhash: Updating /usr/local/texlive/texmf-local/ls-R... 
+texhash: Done.
+ ```
+ 
+ できなければ，styファイルとタイプセットとを同じディレクトリに保存してからタイプセットすればいい．
+ 
+## 連絡
  Merci03(sheltie03)
  umanomimin42 at yahoo.co.jp
+ 
