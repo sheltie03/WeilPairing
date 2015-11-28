@@ -55,7 +55,7 @@ export PATH
 `/usr/local/texlive/texmf-local/tex/latex/`に適当にディレクトリ`sty/`を作って[`slashbox.sty`](ftp://ftp.kddilabs.jp/CTAN/macros/latex/contrib/slashbox/slashbox.sty)を保存する．そして，
  
  ```
- $ sudo texhash /usr/local/texlive/texmf-local/tex/latex/sty/
+$ sudo texhash /usr/local/texlive/texmf-local/tex/latex/sty/
 texhash: Updating /usr/local/texlive/texmf-local/tex/latex/sty//ls-R... 
 texhash: Done.
 $ sudo texhash
